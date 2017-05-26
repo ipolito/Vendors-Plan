@@ -1,34 +1,53 @@
 ﻿
 @{
-    ViewBag.Title = "Representantes";
+    ViewBag.Title = "Localidades";
 }
+<!--empieza la primer capa div-->
 &nbsp;
-    <div class="panel panel-default">
-        <div class="panel-heading form-inline col-lg-2">
-            <img src="~/image/login.PNG" width="81" height="81" />
-            
-        </div>
-        <div class="panel-heading form-inline col-lg-7">
-
-            <h3> Representantes</h3><h5>Gestione su equipo de representantes de campo</h5>
-
-        </div>
-        <div class="panel-heading form-inline col-lg-3">
-
-            <input type=image src="~/image/login.PNG" width="81" height="76">
-        </div>
-    </div>
-
 <div class="panel panel-default">
-        <div class="panel-heading form-inline col-lg-3">
-            <div class="input-group  ">
-                <div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
-                <input type="text" class="form-control" id="exampleInputAmount" placeholder="Buscar Representantes">
-            </div>
+    <div class="panel-heading form-inline col-lg-2">
+        
+        <img src="~/image/login.PNG" width="81" height="81" />
 
+    </div>
+    <div class="panel-heading form-inline col-lg-7">
+
+        <h3> Localidades</h3><h5>Gestione su equipo de representantes de campo</h5>
+
+    </div>
+    <div class="actions with_menu">
+        <a id="lnkCreate" class="button_create master-action rounded" ng-click="openNewFormPopupTrigger()" href="javascript:void(0)">
+            <i class="icon icon-plus"></i>Formulario nuevo
+        </a>
+        <a href="#" id="lnkSaveSort" class="sort initial-hidden">
+            <input type="button" id="btnSaveSort" value='Guardar el orden' class="button_save rounded" />
+        </a>
+        <span id="lnkCancel" class="lnkCancel sort initial-hidden">Cancelar</span>
+        <span class="action_menu plain" href="#">
+            <input id="rn-form-import-arrow" type="button" class="action_menu_button" value=" " />
+            <div class="menu_list initial-hidden">
+                <span class="clip"></span>
+                <ul>
+                    <li id="SortFormTrigger" type="sort" class="menu_item rounded">Reorganizar la lista de formularios en la aplicaci&#243;n m&#243;vil</li>
+                </ul>
+            </div>
+        </span>
+    </div>
+
+</div>
+    </div>
+<!--aqui termina la primer capa div -->
+<!--empieza la segunda capa div-->
+<div class="panel panel-default">
+    <div class="panel-heading form-inline col-lg-3">
+        <div class="input-group  ">
+            <div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Buscaqueda de las Localidades">
         </div>
 
     </div>
+
+</div>
 <div class="panel panel-default">
     <div class="panel-heading form-inline col-lg-3 ">
         <div class="form-group">
@@ -62,7 +81,7 @@
                             </div>
                         </div>
                     </li>
-                    /////////////////////
+                   <!--//////////////////////////-->/////////////////////
                     <li><a href="#">Filtre los representantes según el estado actual</a></li>
 
                 </ul>
@@ -72,8 +91,8 @@
         </div>
     </div>
 
-</div>  
- 
+</div>
+
 <div class="panel panel-default">
     <div class="panel-heading form-inline col-lg-4">
 
@@ -82,13 +101,13 @@
         </button>
     </div>
 
-        </div>
+</div>
 
 <div class="panel panel-default">
     <div class="panel-heading form-inline col-lg-2 ">
 
         <div class="dropdown  ">
-            <a href="#" class="dropdown-toggle" id="dropdownMwnu1" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">Agregar Mas Filtros</a>
+            <a href="#" class="dropdown-toggle" id="dropdownMwnu1" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">Ver Como: LISTA</a>
 
 
             <span class="caret"></span>
@@ -104,20 +123,25 @@
         </div>
     </div>
 </div>
+<!--termina la segunda capa div
+empieza la tabla de localidades-->
 <div class="table-responsive">
     <table class="table">
         <thead>
             <tr>
-                <td>Nombre</td> 
-                <td>Territorio</td>
-                <td>Ultima Actividad</td>
-                <td>Estado Actual (Hora)</td>
+                <td>Codigo</td>
+                <td>Localidad</td>
+                <td>Territorio </td>
+                <td>Estatus</td>
+                <td>Ultima Actividad En La Localidad</td>
                 <td>Activo</td>
             </tr>
         </thead>
-        
+
     </table>
+    <!--termina la tabla actividades-->
     <button type="button" class="btn btn-success img-rounded" data-toggle="button" aria-pressed="false" autocomplete="off">
         Aplicar
     </button>
 </div>
+

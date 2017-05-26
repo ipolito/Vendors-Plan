@@ -32,5 +32,9 @@ namespace SiscomsoftVendors_Plan.Controllers
         {
             return View();
         }
+        public ActionResult Localidades()
+        {
+            return View();
+        }
     }
 }

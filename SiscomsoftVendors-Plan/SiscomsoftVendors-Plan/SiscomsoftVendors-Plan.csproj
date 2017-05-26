@@ -161,6 +161,7 @@
     <Content Include="Views\Home\Registro.cshtml" />
     <Content Include="Views\Home\Actividades.cshtml" />
     <Content Include="Views\Home\Representantes.cshtml" />
+    <Content Include="Views\Home\Localidades.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
