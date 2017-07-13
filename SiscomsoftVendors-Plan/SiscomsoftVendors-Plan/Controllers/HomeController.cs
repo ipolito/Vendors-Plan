@@ -22,19 +22,42 @@ namespace SiscomsoftVendors_Plan.Controllers
         }
         public ActionResult Registro()
         {
-            return View() ;
+            return View();
         }
         public ActionResult Actividades()
         {
             return View();
         }
-        public ActionResult Representantes()
+        public ActionResult Representantes(String txtvalor="")
         {
+            List<Vendedores> datos = VendedorViewModel.ListarContenido(txtvalor);
+            ViewBag.datos = datos;
+            ViewBag.Title = "";
+            ViewBag.txtvalor = txtvalor;
             return View();
         }
+        public ActionResult NuevoRepresentante(VendedoresViewModel dato)
+        {
+            VendedorViewModel.guardar(dato);
+            return View();
+        }
+
         public ActionResult Localidades()
         {
             return View();
         }
+        public ActionResult NuevaLocalidad()
+        {
+            return View();
+        }
+        public ActionResult Formularios()
+        {
+            return View();
+        }
+        public ActionResult ProgramasdeVisita()
+        {
+            return View();
+        }
+        
     }
 }

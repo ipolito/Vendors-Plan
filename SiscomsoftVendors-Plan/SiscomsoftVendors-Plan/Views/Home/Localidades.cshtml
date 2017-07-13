@@ -2,146 +2,192 @@
 @{
     ViewBag.Title = "Localidades";
 }
-<!--empieza la primer capa div-->
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="~/Home/Actividades">Actividades</a></li>
+    <li role="presentation"><a href="~/Home/Representantes">Representantes</a></li>
+    <li role="presentation"><a href="~/Home/Localidades">Localidades</a></li>
+    <li role="presentation"><a href="~/Home/Formularios">Formularios</a></li>
+    <li role="presentation"><a href="~/Home/ProgramasdeVisita">Programas De Visitas</a></li>
+    <li role="presentation"><a href="#">Informes</a></li>
+</ul>
 &nbsp;
-<div class="panel panel-default">
-    <div class="panel-heading form-inline col-lg-2">
-        
-        <img src="~/image/login.PNG" width="81" height="81" />
-
-    </div>
-    <div class="panel-heading form-inline col-lg-7">
-
-        <h3> Localidades</h3><h5>Gestione su equipo de representantes de campo</h5>
-
-    </div>
-    <div class="actions with_menu">
-        <a id="lnkCreate" class="button_create master-action rounded" ng-click="openNewFormPopupTrigger()" href="javascript:void(0)">
-            <i class="icon icon-plus"></i>Formulario nuevo
-        </a>
-        <a href="#" id="lnkSaveSort" class="sort initial-hidden">
-            <input type="button" id="btnSaveSort" value='Guardar el orden' class="button_save rounded" />
-        </a>
-        <span id="lnkCancel" class="lnkCancel sort initial-hidden">Cancelar</span>
-        <span class="action_menu plain" href="#">
-            <input id="rn-form-import-arrow" type="button" class="action_menu_button" value=" " />
-            <div class="menu_list initial-hidden">
-                <span class="clip"></span>
-                <ul>
-                    <li id="SortFormTrigger" type="sort" class="menu_item rounded">Reorganizar la lista de formularios en la aplicaci&#243;n m&#243;vil</li>
-                </ul>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="col-lg-2">
+                    <i class="material-icons">&#xE0AF;</i>
+                </div>
+                <div class="col-lg-7 col-lg-pull-1">
+                    <h5> Localidades</h5><h6>Gestione su equipo de representantes de campo</h6>
+                </div>
+                <br />
+                <div class="col-lg-2">
+                    <button type="button" class="btn btn-success img-rounded" data-toggle="button" aria-pressed="false" autocomplete="off" width="70" height="71">
+                        <span class="glyphicon glyphicon-shopping-plus"></span>
+                        Nueva Localidad 
+                    </button>
+                </div>
+                <div class="dropdown col-lg-1">
+                    <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1 ">
+             
+                        <li><span class="center glyphicon glyphicon-cloud " aria-hidden="true"></span><a href="#">Importar las localidades</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><span class="center glyphicon glyphicon-tag " aria-hidden="true"></span><a href="#">Agregue las etiquetas a las localidades filtradas</a></li>
+                       
+                    </ul>
+                </div>
             </div>
-        </span>
-    </div>
-
-</div>
-    </div>
-<!--aqui termina la primer capa div -->
-<!--empieza la segunda capa div-->
-<div class="panel panel-default">
-    <div class="panel-heading form-inline col-lg-3">
-        <div class="input-group  ">
-            <div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
-            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Buscaqueda de las Localidades">
         </div>
-
     </div>
-
 </div>
-<div class="panel panel-default">
-    <div class="panel-heading form-inline col-lg-3 ">
-        <div class="form-group">
-            <div class="dropdown ">
-                <a href="#" class="dropdown-toggle" id="dropdownMwnu1" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">Agregar Mas Filtros</a>
 
-
-                <span class="caret"></span>
-
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li>
-                        <a href="#">Filtrar Representan Por Territorio</a>
-                        //////////////falta pedir ayuda con tutor
-                        <div class="panel-heading form-inline">
-                            <div class="form-group">
-                                <div class="dropdown">
-
-                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        Agregar Mas Filtros
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#">Filtrar Representan Por Territorio</a></li>
-
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                    </ul>
-
-
-                                </div>
-                            </div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <div class="input-group  ">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+                            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Busqueda de las localidades">
                         </div>
-                    </li>
-                   <!--//////////////////////////-->/////////////////////
-                    <li><a href="#">Filtre los representantes según el estado actual</a></li>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="form-group">
+                        <div class="dropdown ">
+                            <a href="#" class="dropdown-toggle" id="dropdownMwnu1" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">Agregar Mas Filtros<span class="caret"></span></a>
 
-                </ul>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                    <label>Filtrar Representan Por Territorio</label>
+                                    <div class="form-group">
+                                        <!--<div class="dropdown">
+                                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                Agregar Mas Filtros
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                <li><a href="#">Filtrar Representan Por Territorio</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>-->
+                                        <select class="form-control">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Filtre los representantes según el estado actual</label>
+                                    <div class="form-group">
+                                        <div class="dropdown">
+                                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                Agregar Mas Filtros
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                <li><a href="#">Filtrar Representan Por Territorio</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <button type="button" class="btn btn-success img-rounded" data-toggle="button" aria-pressed="false" autocomplete="off" width="70" height="71">
+                        Aplicar
+                    </button>
+                </div>
+                <div class="col-lg-2">
+                    <div class="form-group">
+                        <div class="dropdown ">
+                            <a href="#" class="dropdown-toggle" id="dropdownMwnu1" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">Ver como: Lista</a>
 
 
+                            <span class="caret"></span>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>
+                                    <a href="#">Filtrar Representan Por Territorio</a>
+                                    //////////////falta pedir ayuda con tutor
+                                    <div class="panel-heading form-inline">
+                                        <div class="form-group">
+                                            <div class="dropdown">
+
+                                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    Agregar Mas Filtros
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                    <li><a href="#">Filtrar Representan Por Territorio</a></li>
+
+                                                    <li><a href="#">Another action</a></li>
+                                                    <li><a href="#">Something else here</a></li>
+                                                </ul>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                /////////////////////
+                                <li><a href="#">Filtre los representantes según el estado actual</a></li>
+
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading form-inline col-lg-4">
-
-        <button type="button" class="btn btn-success img-rounded" data-toggle="button" aria-pressed="false" autocomplete="off">
-            Aplicar
-        </button>
-    </div>
-
-</div>
-
-<div class="panel panel-default">
-    <div class="panel-heading form-inline col-lg-2 ">
-
-        <div class="dropdown  ">
-            <a href="#" class="dropdown-toggle" id="dropdownMwnu1" data-toggle="dropdown" aria-haspopup="false" aria-expanded="true">Ver Como: LISTA</a>
-
-
-            <span class="caret"></span>
-
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li>
-                    <a href="#">Filtrar Representan Por Territorio</a>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Filtre los representantes según el estado actual</a></li>
-                <li role="separator" class="divider"></li>
-            </ul>
 
         </div>
     </div>
 </div>
-<!--termina la segunda capa div
-empieza la tabla de localidades-->
-<div class="table-responsive">
-    <table class="table">
-        <thead>
-            <tr>
-                <td>Codigo</td>
-                <td>Localidad</td>
-                <td>Territorio </td>
-                <td>Estatus</td>
-                <td>Ultima Actividad En La Localidad</td>
-                <td>Activo</td>
-            </tr>
-        </thead>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="table-responsive">
+            <table class="table">
+                <thead >
+                   
+                    <tr >
+                        <th>Codigo</th>
+                        <th>Localidad</th>
+                        <th>Territorio</th>
+                        <th>Estatus</th>
+                        <th>Ultima actividad en la localidad</th>
+                        <th>Activo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
 
-    </table>
-    <!--termina la tabla actividades-->
-    <button type="button" class="btn btn-success img-rounded" data-toggle="button" aria-pressed="false" autocomplete="off">
-        Aplicar
-    </button>
+                        <td>luis</td>
+                        <td>asdfghjkl;</td>
+                        <td>asdfghjkl;</td>
+                        <td>asdfghjkl</td>
+                        <td>sdfghjk</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <button type="button" class="btn btn-success img-rounded" data-toggle="button" aria-pressed="false" autocomplete="off">
+                Exportar
+            </button>
+        </div>
+    </div>
 </div>
-

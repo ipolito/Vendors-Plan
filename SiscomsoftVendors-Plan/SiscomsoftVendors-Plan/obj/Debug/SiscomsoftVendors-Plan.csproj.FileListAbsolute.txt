@@ -89,6 +89,9 @@ C:\Users\User\Documents\GitHub\Vendors-Plan\SiscomsoftVendors-Plan\SiscomsoftVen
 C:\Users\User\Documents\GitHub\Vendors-Plan\SiscomsoftVendors-Plan\SiscomsoftVendors-Plan\bin\es\System.Web.Mvc.resources.dll
 C:\Users\User\Documents\GitHub\Vendors-Plan\SiscomsoftVendors-Plan\SiscomsoftVendors-Plan\obj\Debug\SiscomsoftVendors-Plan.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\GitHub\Vendors-Plan\SiscomsoftVendors-Plan\SiscomsoftVendors-Plan\obj\Debug\SiscomsoftVendors_Plan.Migrations.initial.resources
+C:\Users\User\Documents\GitHub\Vendors-Plan\SiscomsoftVendors-Plan\SiscomsoftVendors-Plan\obj\Debug\SiscomsoftVendors_Plan.Migrations.inicial2.resources
+C:\Users\User\Documents\GitHub\Vendors-Plan\SiscomsoftVendors-Plan\SiscomsoftVendors-Plan\obj\Debug\SiscomsoftVendors_Plan.Migrations.inicial3.resources
+C:\Users\User\Documents\GitHub\Vendors-Plan\SiscomsoftVendors-Plan\SiscomsoftVendors-Plan\obj\Debug\SiscomsoftVendors_Plan.Properties.Resources.resources
 C:\Users\User\Documents\GitHub\Vendors-Plan\SiscomsoftVendors-Plan\SiscomsoftVendors-Plan\obj\Debug\SiscomsoftVendors-Plan.csproj.GenerateResource.Cache
 C:\Users\User\Documents\GitHub\Vendors-Plan\SiscomsoftVendors-Plan\SiscomsoftVendors-Plan\obj\Debug\SiscomsoftVendors-Plan.dll
 C:\Users\User\Documents\GitHub\Vendors-Plan\SiscomsoftVendors-Plan\SiscomsoftVendors-Plan\obj\Debug\SiscomsoftVendors-Plan.pdb

@@ -26,7 +26,7 @@ namespace SiscomsoftVendors_Plan.Models
 
         [Required(ErrorMessage = "Telefono requerido")]
         
-        public int Telefono { get; set; }
+        public String Telefono { get; set; }
 
         [Required(ErrorMessage = "Correo requerido")]
         [StringLength(50)]
@@ -35,5 +35,11 @@ namespace SiscomsoftVendors_Plan.Models
         [Required(ErrorMessage = "Contraseña requerido")]
         [StringLength(128)]
         public String Contrasena { get; set; }
+        public Boolean Status { get; set; }
+
+        public Vendedores()
+        {
+            this.Status = true;
+        }
     }
 }

@@ -13,5 +13,7 @@ namespace SiscomsoftVendors_Plan.ViewModel
         public String txtTelefono { get; set; }
         public String txtCorreo { get; set; }
        public String txtContrasena { get; set; }
+        public String txtnom_rol { get; set; }
+        public Boolean txtStatus { get; set; }
     }
 }

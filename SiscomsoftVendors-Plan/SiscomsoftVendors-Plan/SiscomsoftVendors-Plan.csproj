@@ -107,16 +107,24 @@
   <ItemGroup>
     <Content Include="content\bootstrap.css" />
     <Content Include="content\bootstrap.min.css" />
+    <Content Include="content\materialize.css" />
     <Content Include="content\materialize.min.css" />
     <Content Include="content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="image\+nuevorepresents.PNG" />
+    <Content Include="image\formulario.PNG" />
+    <Content Include="image\informes.PNG" />
+    <Content Include="image\Localoidad.PNG" />
     <Content Include="image\login.PNG" />
+    <Content Include="image\logo.png" />
+    <Content Include="image\representante.jpg" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
+    <Content Include="scripts\materialize.js" />
     <Content Include="scripts\materialize.min.js" />
     <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config">
@@ -134,6 +142,14 @@
     <Compile Include="Migrations\201705170228175_initial.Designer.cs">
       <DependentUpon>201705170228175_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706091804000_inicial2.cs" />
+    <Compile Include="Migrations\201706091804000_inicial2.Designer.cs">
+      <DependentUpon>201706091804000_inicial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706092004560_inicial3.cs" />
+    <Compile Include="Migrations\201706092004560_inicial3.Designer.cs">
+      <DependentUpon>201706092004560_inicial3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Actividades.cs" />
     <Compile Include="Models\Clientes.cs" />
@@ -143,6 +159,11 @@
     <Compile Include="Models\Permisos.cs" />
     <Compile Include="Models\Roles.cs" />
     <Compile Include="Models\Vendedores.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\VendedorViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\VendedoresViewModel.cs" />
@@ -158,10 +179,16 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
-    <Content Include="Views\Home\Registro.cshtml" />
+    <Content Include="Views\Home\Registro.cshtml">
+      <BrowseToURL>~/Home/</BrowseToURL>
+    </Content>
     <Content Include="Views\Home\Actividades.cshtml" />
     <Content Include="Views\Home\Representantes.cshtml" />
     <Content Include="Views\Home\Localidades.cshtml" />
+    <Content Include="Views\Home\Formularios.cshtml" />
+    <Content Include="Views\Home\ProgramasdeVisita.cshtml" />
+    <Content Include="Views\Home\NuevoRepresentante.cshtml" />
+    <Content Include="Views\Home\NuevaLocalidad.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -171,10 +198,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="fonts\roboto\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201705170228175_initial.resx">
       <DependentUpon>201705170228175_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706091804000_inicial2.resx">
+      <DependentUpon>201706091804000_inicial2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706092004560_inicial3.resx">
+      <DependentUpon>201706092004560_inicial3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
